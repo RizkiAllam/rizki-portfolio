@@ -1,4 +1,5 @@
 import { Mail, Github, Linkedin, MapPin, Phone } from 'lucide-react';
+import profileImg from '../../assets/IMG_8983.PNG';
 import { usePortfolio } from '../../Context/PortfolioContext';
 
 const Hero = () => {
@@ -26,7 +27,12 @@ const Hero = () => {
         </div>
         <div className="relative w-48 h-48 md:w-80 md:h-80 flex-shrink-0 animate-float">
           <div className={`absolute inset-0 rounded-full border-4 shadow-2xl overflow-hidden z-10 ${isDarkMode ? 'border-slate-800/50' : 'border-white'}`}>
-            <img src="src/assets/IMG_8983.PNG" alt="Rizki" className="w-full h-full object-cover" />
+            {/* Ganti string "IMG_8983.PNG" menjadi variabel {profileImg} */}
+            <img 
+              src={profileImg} 
+              alt="Rizki Nur'allam" 
+              className="w-full h-full object-cover" 
+            />
           </div>
         </div>
       </div>
