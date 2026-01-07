@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <nav className={`fixed w-full z-50 transition-all duration-300 backdrop-blur-md shadow-sm border-b ${navClass}`}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-        <div className="font-bold text-2xl text-emerald-500 tracking-tighter cursor-pointer">RN<span className={isDarkMode ? 'text-white' : 'text-slate-800'}>.</span></div>
+        <div className="font-bold text-2xl text-emerald-500 tracking-tighter cursor-pointer">RA<span className={isDarkMode ? 'text-white' : 'text-slate-800'}>.</span></div>
         <div className="hidden md:flex items-center gap-6">
           {['About', 'Skills', 'Experience', 'Projects', 'Education'].map((item) => (
             <button key={item} onClick={() => scrollToSection(item.toLowerCase())} className={`hover:text-emerald-500 font-medium text-sm transition-colors ${isDarkMode ? 'text-slate-300' : 'text-slate-600'}`}>{item}</button>
